@@ -182,7 +182,7 @@ def index():
 @app.route('/send', methods=['GET', 'POST'])
 def main():
     points = request.get_json()
-    old_im = Image.open('./tmp/basic.jpg')
+    old_im = Image.open('./basic.jpg')
     
     return solve_dataset(old_im, points)
     
